@@ -33,6 +33,15 @@ The demo exposes the following backends:
 - Zipkin at http://0.0.0.0:9411
 - Prometheus at http://0.0.0.0:9090 
 
+Prometheus
+```sh:
+open http://0.0.0.0:9090 
+```
+
+Jaeger
+```sh:
+open http://0.0.0.0:16686
+```
 Notes:
 
 - It may take some time for the application metrics to appear on the Prometheus
@@ -51,5 +60,3 @@ make docker-otelcontribcol
 
 And set an environment variable `OTELCOL_IMG` to `otelcontribcol` before 
 launching the command `docker-compose up -d`.
-
-
